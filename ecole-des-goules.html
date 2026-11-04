@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>L’école des goules | Tournée d’Halloween pour enfants à Ottawa</title>
+<style>
+:root{--bg:#fbf7f1;--surface:#fff;--ink:#1d1a22;--muted:#5d5766;--line:#e7dfd3;--accent:#e8700a;--accent-ink:#fff;--deep:#1f1630;--deep-ink:#f4eee6;--promo:#6b2fa0;--ok:#2f7a3b;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15101d;--surface:#1f1830;--ink:#f1ebf6;--muted:#b3a9c0;--line:#352b48;--deep:#0d0913;--promo:#b98af0}}
+:root[data-theme="dark"]{--bg:#15101d;--surface:#1f1830;--ink:#f1ebf6;--muted:#b3a9c0;--line:#352b48;--deep:#0d0913;--promo:#b98af0}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px;height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 Georgia,"Times New Roman",serif}
+h1,h2,h3,nav,button,.btn,label,.price,.tag{font-family:"Trebuchet MS","Segoe UI",Helvetica,Arial,sans-serif}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.promo-bar{background:var(--promo);color:#fff;text-align:center;font:600 14px/1.4 "Trebuchet MS",Arial,sans-serif;padding:9px 14px}
+.promo-bar a{color:#fff}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--deep);color:var(--deep-ink)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font:700 20px "Trebuchet MS",Arial,sans-serif;text-decoration:none;letter-spacing:.2px}
+nav{display:flex;gap:22px;font-size:15px}
+nav a{text-decoration:none;opacity:.85;padding:6px 0;border-bottom:2px solid transparent}
+nav a:hover,nav a:focus-visible{opacity:1;border-color:var(--accent);outline:none}
+.hero{background:radial-gradient(ellipse at 80% 20%,#e8700a55,transparent 55%),linear-gradient(160deg,#1f1630,#0d0913);color:var(--deep-ink);padding:84px 0 92px;position:relative;overflow:hidden}
+.moon{position:absolute;right:6%;top:40px;width:170px;height:170px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#fff3d6,#f2c26b 70%);opacity:.9;box-shadow:0 0 90px #f2c26b66}
+.hero h1{font-size:clamp(38px,6vw,66px);line-height:1.06;margin:0 0 18px;max-width:14ch;letter-spacing:-.5px}
+.hero p{max-width:52ch;font-size:19px;margin:0 0 28px;opacity:.92}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);font-weight:700;font-size:16px;padding:13px 24px;border-radius:6px;text-decoration:none;border:0;cursor:pointer}
+.btn:hover{filter:brightness(1.08)}.btn:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--promo);outline-offset:2px}
+.btn.ghost{background:transparent;border:1.5px solid #ffffff88;color:#fff;margin-left:10px}
+.facts{display:flex;flex-wrap:wrap;gap:12px 34px;margin-top:40px;font:15px "Trebuchet MS",Arial,sans-serif;opacity:.9}
+section{padding:72px 0}
+h2{font-size:clamp(28px,4vw,38px);line-height:1.15;margin:0 0 16px}
+.lead{max-width:62ch;color:var(--muted)}
+.how{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:34px}
+.how div{border-top:3px solid var(--accent);padding-top:14px}
+.how h3{margin:0 0 6px;font-size:18px}.how p{margin:0;color:var(--muted);font-size:16px}
+.promos{background:var(--deep);color:var(--deep-ink)}
+.promos .lead{color:#cfc6dc}
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+.pcard{border:1.5px dashed #b98af0;border-radius:10px;padding:22px}
+.pcard strong{display:block;font:800 34px "Trebuchet MS",Arial,sans-serif;color:#f5b36b}
+.pcard h3{margin:4px 0 8px;font-size:19px}.pcard p{margin:0 0 12px;font-size:15.5px;color:#d8cfe4}
+.code{display:inline-block;font:700 14px "Courier New",monospace;background:#ffffff1a;padding:4px 10px;border-radius:4px;letter-spacing:1px}
+.pkgs{display:grid;gap:22px;margin-top:34px}
+.pkg{display:grid;grid-template-columns:230px 1fr auto;gap:28px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:24px}
+.age{height:150px;border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;font-family:"Trebuchet MS",Arial,sans-serif;text-align:center}
+.age b{font-size:44px;line-height:1}.age span{font-size:14px;opacity:.9}
+.a1{background:linear-gradient(145deg,#8a4fd1,#e8700a)}.a2{background:linear-gradient(145deg,#2a3a8f,#8a4fd1)}.a3{background:linear-gradient(145deg,#111,#5b1b1b)}
+.pkg h3{margin:0 0 4px;font-size:26px;color:var(--accent)}
+.pkg .sched{font:600 14px "Trebuchet MS",Arial,sans-serif;color:var(--muted);margin:0 0 8px}
+.pkg p{margin:0 0 8px;font-size:16px}
+.buy{text-align:right;min-width:150px}
+.was{text-decoration:line-through;color:var(--muted);font:15px "Trebuchet MS",Arial,sans-serif}
+.price{font-size:32px;font-weight:800;color:var(--ok);line-height:1.1}
+.tag{display:inline-block;background:var(--promo);color:#fff;font-size:12.5px;font-weight:700;padding:3px 9px;border-radius:20px;margin-bottom:8px}
+.buy .btn{margin-top:10px;width:100%;text-align:center}
+.incl{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:8px 0 0}
+.incl li{font:13.5px "Trebuchet MS",Arial,sans-serif;background:var(--bg);border:1px solid var(--line);border-radius:20px;padding:3px 12px}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:30px}
+.gal div{aspect-ratio:1;border-radius:8px;display:flex;align-items:flex-end;padding:12px;color:#fff;font:600 14px "Trebuchet MS",Arial,sans-serif}
+.g1{background:linear-gradient(160deg,#e8700a,#6b2d05)}.g2{background:linear-gradient(160deg,#3b2a63,#0d0913)}.g3{background:linear-gradient(160deg,#6b2fa0,#e8700a)}.g4{background:linear-gradient(160deg,#2f4a2f,#0f1a0f)}
+.note{font-size:14px;color:var(--muted);margin-top:10px}
+.formbox{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:28px;margin-top:28px;max-width:680px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{display:block;font-size:14px;font-weight:700;margin:14px 0 5px}
+input,select{width:100%;font:16px "Trebuchet MS",Arial,sans-serif;padding:11px;border:1.5px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink)}
+.msg{margin-top:16px;padding:14px;border-radius:6px;font:15px "Trebuchet MS",Arial,sans-serif}
+.msg.ok{background:#2f7a3b22;border:1px solid var(--ok)}.msg.err{background:#b0000020;border:1px solid #b00000}
+footer{background:var(--deep);color:#cfc6dc;padding:36px 0;font:14px/1.6 "Trebuchet MS",Arial,sans-serif}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
+@media(max-width:860px){.how,.pgrid{grid-template-columns:1fr}.pkg{grid-template-columns:1fr}.buy{text-align:left}.gal{grid-template-columns:repeat(2,1fr)}.moon{width:100px;height:100px;opacity:.6}nav{gap:14px;font-size:14px}.btn.ghost{margin:10px 0 0}.row{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="promo-bar">Offre d’inscription hâtive : <strong>15 % de rabais</strong> avec le code <strong>GOULES15</strong> — <a href="#promotions">voir toutes les promotions</a></div>
+<header><div class="wrap">
+<a class="brand" href="#accueil">L’école des goules</a>
+<nav aria-label="Navigation principale"><a href="#accueil">Accueil</a><a href="#forfaits">Les forfaits</a><a href="#promotions">Promotions</a><a href="#images">Images</a><a href="#inscription">Inscription</a></nav>
+</div></header>
+
+<main>
+<section class="hero" id="accueil"><div class="moon" aria-hidden="true"></div><div class="wrap">
+<h1>Une soirée d’Halloween mémorable pour vos enfants</h1>
+<p>On s’occupe de la journée, du transport et de la tournée des bonbons à Rockcliffe Park. Vous, vous profitez de votre soirée.</p>
+<a class="btn" href="#inscription">Inscrire mon enfant</a><a class="btn ghost" href="#forfaits">Comparer les forfaits</a>
+<div class="facts"><span>Enfants de 4 à 13 ans et plus</span><span>Autobus avec accompagnateurs</span><span>Repas et collations inclus</span></div>
+</div></section>
+
+<section id="service"><div class="wrap">
+<h2>Notre service</h2>
+<p class="lead">Notre entreprise est née d’un constat simple : les parents n’ont pas toujours envie de faire le tour des bonbons avec leurs enfants. Nous avons donc créé un espace où vous pouvez les déposer pour la journée, sans avoir à les accompagner.</p>
+<div class="how">
+<div><h3>1. Dépôt au point de rencontre</h3><p>Entre 3 et 6 autobus (1 ou 2 par forfait) prennent en charge vos enfants à un endroit précis.</p></div>
+<div><h3>2. Activités adaptées à leur âge</h3><p>Bricolages, films, labyrinthes de maïs, visites et plus, selon le forfait choisi.</p></div>
+<div><h3>3. Tournée à Rockcliffe Park</h3><p>Vers 18 h, tous les autobus se rendent à Rockcliffe Park pour la tournée des bonbons.</p></div>
+</div></div></section>
+
+<section class="promos" id="promotions"><div class="wrap">
+<h2>Promotions de la saison</h2>
+<p class="lead">Profitez de nos rabais pour faire de belles économies. Les codes se saisissent à l’étape de l’inscription.</p>
+<div class="pgrid">
+<div class="pcard"><strong>–15 %</strong><h3>Inscription hâtive</h3><p>Réservez tôt et économisez sur tous les forfaits. Les places sont limitées dans chaque autobus.</p><span class="code">GOULES15</span></div>
+<div class="pcard"><strong>–10 %</strong><h3>Rabais famille</h3><p>Dès le deuxième enfant d’une même famille, obtenez 10 % de rabais sur son forfait.</p><span class="code">FAMILLE10</span></div>
+<div class="pcard"><strong>2 pour 1</strong><h3>Amenez un ami</h3><p>Inscrivez un ami et recevez des collations supplémentaires pour la soirée.</p><span class="code">AMIS2</span></div>
+</div>
+<p class="note" style="color:#b3a9c0">Les promotions ne sont pas cumulables, sauf indication contraire. Offres illustratives.</p>
+</div></section>
+
+<section id="forfaits"><div class="wrap">
+<h2>Les forfaits</h2>
+<p class="lead">Quatre niveaux d’intensité, selon l’âge de votre enfant. Chaque forfait comprend le transport en autobus, la supervision, les collations et le souper.</p>
+<div class="pkgs">
+
+<article class="pkg"><div class="age a1"><b>4–8</b><span>ans</span></div>
+<div><h3>Inquiétant</h3><p class="sched">Tournée à 18 h · Retour vers 20 h</p>
+<p>Pensé pour les plus jeunes : dégustation de bonbons, bricolages, un film et la visite d’un champ de citrouilles. Collations sur le thème de l’Halloween et souper santé.</p>
+<ul class="incl"><li>Dégustation</li><li>Bricolages</li><li>Film</li><li>Champ de citrouilles</li><li>Souper santé</li></ul></div>
+<div class="buy"><span class="tag">–15 % hâtive</span><br><span class="was">79,99 $</span><div class="price">67,99 $</div><a class="btn" href="#inscription" data-pick="Inquiétant">Inscription</a></div></article>
+
+<article class="pkg"><div class="age a2"><b>9–12</b><span>ans</span></div>
+<div><h3>Effrayant</h3><p class="sched">Tournée à 18 h · Retour à 21 h</p>
+<p>Pour les plus vieux : labyrinthes de maïs, photomaton, sculpture de citrouilles et visite chez 1D Studios. Collations et souper inclus.</p>
+<ul class="incl"><li>Labyrinthes de maïs</li><li>Photomaton</li><li>Sculpture de citrouilles</li><li>1D Studios</li><li>Souper</li></ul></div>
+<div class="buy"><span class="tag">–15 % hâtive</span><br><span class="was">109,99 $</span><div class="price">93,49 $</div><a class="btn" href="#inscription" data-pick="Effrayant">Inscription</a></div></article>
+
+<article class="pkg"><div class="age a3"><b>13+</b><span>ans</span></div>
+<div><h3>Terrifiant</h3><p class="sched">Tournée à 18 h · Retour vers 21 h 30</p>
+<p>Pour tous les adolescents : film d’horreur, visite extrême de chasse à la peur, tournée des fantômes et concours de pâtisserie. Collations et souper fournis.</p>
+<ul class="incl"><li>Film d’horreur</li><li>Chasse à la peur</li><li>Tournée des fantômes</li><li>Concours de pâtisserie</li><li>Souper</li></ul></div>
+<div class="buy"><span class="tag">–15 % hâtive</span><br><span class="was">129,99 $</span><div class="price">110,49 $</div><a class="btn" href="#inscription" data-pick="Terrifiant">Inscription</a></div></article>
+
+</div></div></section>
+
+<section id="images" style="background:var(--surface)"><div class="wrap">
+<h2>Images</h2>
+<p class="lead">Un aperçu de l’ambiance de nos soirées. Remplacez ces tuiles par vos propres photos.</p>
+<div class="gal"><div class="g1">Champ de citrouilles</div><div class="g2">Tournée des bonbons</div><div class="g3">Photomaton</div><div class="g4">Chasse à la peur</div></div>
+</div></section>
+
+<section id="inscription"><div class="wrap">
+<h2>Inscription</h2>
+<p class="lead">Remplissez le formulaire pour réserver une place. Nous vous confirmerons l’inscription par courriel.</p>
+<div class="formbox">
+<div class="row"><div><label for="parent">Nom du parent</label><input id="parent" autocomplete="name"></div><div><label for="email">Courriel</label><input id="email" type="email" autocomplete="email"></div></div>
+<div class="row"><div><label for="enfant">Prénom de l’enfant</label><input id="enfant"></div><div><label for="forfait">Forfait</label><select id="forfait"><option>Inquiétant (4–8 ans)</option><option>Effrayant (9–12 ans)</option><option>Terrifiant (13 ans et plus)</option></select></div></div>
+<label for="code">Code promotionnel (facultatif)</label><input id="code" placeholder="Ex. : GOULES15">
+<button class="btn" id="go" style="margin-top:20px">Envoyer l’inscription</button>
+<div id="out" role="status"></div>
+</div></div></section>
+</main>
+
+<footer><div class="wrap"><div><strong>L’école des goules</strong><br>Tournée d’Halloween pour enfants · Ottawa (Ontario)</div><div>Destination : Rockcliffe Park<br>© L’école des goules</div></div></footer>
+
+<script>
+(function(){
+var codes={GOULES15:15,FAMILLE10:10,AMIS2:0};
+var base={"Inquiétant":79.99,"Effrayant":109.99,"Terrifiant":129.99};
+document.querySelectorAll('[data-pick]').forEach(function(a){a.addEventListener('click',function(){
+var s=document.getElementById('forfait');for(var i=0;i<s.options.length;i++){if(s.options[i].text.indexOf(a.dataset.pick)===0)s.selectedIndex=i}})});
+document.getElementById('go').addEventListener('click',function(){
+var out=document.getElementById('out'),p=document.getElementById('parent').value.trim(),e=document.getElementById('email').value.trim(),k=document.getElementById('enfant').value.trim();
+if(!p||!k||!/^\S+@\S+\.\S+$/.test(e)){out.className='msg err';out.textContent='Veuillez indiquer le nom du parent, le prénom de l’enfant et un courriel valide.';return}
+var f=document.getElementById('forfait').value.split(' ')[0],c=document.getElementById('code').value.trim().toUpperCase(),pct=codes[c]||0,tot=base[f]*(1-pct/100);
+out.className='msg ok';
+out.textContent='Merci, '+p+'. La demande pour '+k+' (forfait '+f+') est reçue. Total estimé : '+tot.toFixed(2).replace('.',',')+' $'+(pct?' (rabais de '+pct+' % appliqué)':'')+'. Ceci est une démonstration : aucune donnée n’est envoyée.';
+});
+})();
+</script>
+</body>
+</html>
